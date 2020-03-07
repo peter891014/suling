@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+  "i-collapse": "../../dist/collapse/index",
+  "i-collapse-item": "../../dist/collapse-item/index"},
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "法务服务",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

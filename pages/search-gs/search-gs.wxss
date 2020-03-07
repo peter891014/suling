@@ -1,0 +1,26 @@
+/* pages/search-gs/search-gs.wxss */
+.search{
+  position: relative;
+  width: 90%;
+  margin: 20rpx auto;
+
+}
+.search input{
+  border:1px solid #ccc;
+  border-radius: 6px;
+  height:88rpx;
+}
+.placeholder{
+  color: #ccc;
+  text-align: center
+  }
+.icons{
+  position: absolute;
+  right: 30rpx;
+  top:14px;
+}
+.lists{
+  text-align: center;
+  margin-top: 30rpx;
+  color: rgb(230, 124, 25);
+}

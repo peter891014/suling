@@ -1,0 +1,17 @@
+<!--pages/search/Idea/Idea.wxml-->
+<view class="Container">
+<text class="Container-text">苏领招聘平台创始人的理想</text>
+<text class="text-time">2019/09/28</text>
+</view>
+<view class="Container-idea">
+<text >我们的理想就是想让找工作的蓝领在哦我们平台找到合适的工作！据国家统计局显示，我国有9亿劳动人口，其中白领近2亿，蓝领约4亿人。4亿蓝领中农民工占2.74亿，制造业蓝领约占1亿，建筑业蓝领占5000-8000万，服务业蓝领约占1.2亿。但从人口数量上来看，蓝领招聘市场规模应是白领市场规模的2倍以上。
+</text>
+<!-- <view class="Container-image"> -->
+<image src="http://m.qpic.cn/psc?/V13Cv6dH1DBP2N/jmmX4OKaz9ls*nNN2EORpVcHuAl*R4LlpIFcB1Pbc5cWzUzduG.fgFrSR*Ee.8ac8Kv8.GXWKD8zuckAfsIX3Y7vsCrQixl*omE6Hwk3ElA!/b&bo=4wEjAQAAAAARF.A!&rf=viewer_4"></image>
+<!-- </view> -->
+<text>  不同于白领的求职行为，蓝领群体有迥异的高频求职特征。一个蓝领1年中主动求职和跳槽的频率是4-5次，是白领的近4倍。一方面，这是因为蓝领人群主要来自于农民工，受春节、春耕及秋收等农忙季劳动力刚需的被动影响，务工时间被人为肢解；另一方面，蓝领人群受教育程度低，年龄偏小（90后，00后为主），心智模式易受情绪化与群体性影响，就业的主观性和随机性强。若仅从就业频次而言，蓝领招聘市场将会是白领招聘市场的4倍。
+</text>
+<image src="http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/CdpCSWF7tjOtuzkvAoel671NmI.ZtxdWcd2bf5t2CtE!/b/dDQBAAAAAAAA&bo=IAMWAgAAAAARFxc!&rf=viewer_4"></image>
+<text>制造业受产业和销量的影响，生产旺季经常出现产能和销量倒挂现象，为确保产量按计划供应，在旺季还会出现“抢人大战”。他们不惜一切代价为目的，以确保工人的稳定供给，进而确保他们的产能的实现。这一现象几乎不可能在白领市场出现，蓝领招聘市场独有的返费交易造就了一个极富想象力的盈利模式和商业空间，就此一点来说，蓝领招聘市场拥有比白领招聘市场更大的规模，甚至不逊于猎头市场。
+</text>
+</view>

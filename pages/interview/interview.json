@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index"
+  },
+ "backgroundTextStyle": "dark",
+"navigationBarBackgroundColor": "#409eff",
+"navigationBarTitleText": "企业收藏",
+"navigationBarTextStyle": "white"
+}

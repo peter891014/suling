@@ -1,0 +1,96 @@
+<!--pages/edit-resume-base/edit-resume-base.wxml-->
+<view class="item-cells no-top">
+
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>姓名</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input bindfocus="namefocus" bindblur="blurfocus" placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="12" value="{{name}}" placeholder="{{user}}" />
+    </view>
+  </view>
+
+  <view class="item-cell item-cell-access">
+    <view class="item-cell-bd">
+      <text>性别</text>
+    </view>
+    <picker class="item-cell-ft blue" bindchange="bindPickerChangeSex" value="{{gender}}" range="{{genderlist}}">
+      <view class="picker">
+        {{genderlist[gender]}}
+      </view>
+    </picker>
+  </view>
+
+    <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>籍贯</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input bindfocus="habifocus" bindblur="tionfocus" placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="10" value="{{habitation}}" placeholder="{{userb}}" />
+    </view>
+  </view>
+
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>身高</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input bindfocus="heifocus" bindblur="heightfocus" placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="3" value="{{height}}" placeholder="{{usera}}" />
+    </view>
+  </view>
+  <view class="item-cell item-cell-access">
+    <view class="item-cell-bd">
+      <text>最高学历</text>
+    </view>
+    <picker class="item-cell-ft blue" bindchange="bindPickerChangeEduLevel" value="{{education}}" range="{{edulevellist}}">
+      <view class="picker">
+        {{edulevellist[education]}}
+      </view>
+    </picker>
+  </view>
+  <view class="item-cell item-cell-access">
+    <view class="item-cell-bd">
+      <text>出生年月</text>
+    </view>
+    <picker class="item-cell-ft blue" mode="date" value="{{birthyear}}" fields="month" start="1960-01" end="2000-01" bindchange="bindDateChangeBirthday">
+      <view class="picker">
+        {{birthyear}}
+      </view>
+    </picker>
+  </view>
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>现居地址</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input bindfocus="holdfocus" bindblur="housefocus" placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="15" value="{{household}}" placeholder="{{houseuser}}"/>
+    </view>
+  </view>
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>联系手机</text>
+    </view>
+    <view class="item-cell-ft blue">
+       <input type="number" bindfocus="phonefocus" bindblur="phoneblur" maxlength="11" value="{{phone}}" placeholder="{{userphone}}" /> 
+    </view>
+  </view>
+    <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>紧急联系人姓名</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input type="text" bindfocus="nafocus" bindblur="melblur" value="{{emergencyContactName}}" placeholder="{{userf}}" />
+    </view>
+  </view>
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>紧急联系人电话</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input type="text" bindfocus="emailfocus" bindblur="emailblur" value="{{emergencyContactPhone}}" placeholder="{{useremail}}" />
+    </view>
+  </view>
+</view>
+<view class="btn-box">
+  <button class="btn-sure" size="default" hover-class="btn-sure-hover" catchtap="submitResumeBaseTap"> 保存 </button>
+</view>  

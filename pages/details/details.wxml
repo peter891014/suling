@@ -1,0 +1,53 @@
+<view class="main">
+    <view class="goods-box">
+        <image src="{{goods.url}}" class="goods-thumb"></image>
+
+        <view class="goods-operation">
+            <text class="goods-operation-red" bindtap="delate">-</text>
+            <text class="goods-operation-num">数量  {{num}}</text>
+            <text class="goods-operation-add" bindtap="addCount">+</text>
+            <text class="goods-to-cart" bindtap="addToCart">兑换</text>
+        </view>
+        <image wx:if="{{show}}" src="/image/cart1.png" class="to-carts-icon"></image>
+        <view class="goods-stock">剩余{{goods.price}}件</view>
+        <view class="goods-title">{{goods.title}}</view>
+        <view class="goods-price">{{goods.price}}积分</view>
+    </view>
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+
+<view class="modal-dialog" wx:if="{{showModal}}">
+
+<view class="modal-title">收货信息</view>
+
+<view class="modal-content">
+
+<view class="modal-input">
+
+<input placeholder-class="input-holder" type="number" maxlength="10" bindinput="bindName" class="input" placeholder="姓名"></input>
+
+</view>
+
+<view class="modal-input">
+
+<input placeholder-class="input-holder" type="number" maxlength="11" bindinput="bindPhone" class="input" placeholder="电话"></input>
+
+</view>
+
+<view class="modal-input">
+
+<input placeholder-class="input-holder" type="text" maxlength="30" bindinput="bindDetail" class="input" placeholder="地址"></input>
+
+</view>
+
+</view>
+
+<view class="modal-footer">
+
+<view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+
+<view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+
+</view>
+
+</view>
+</view>

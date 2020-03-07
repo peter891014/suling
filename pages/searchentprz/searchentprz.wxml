@@ -1,0 +1,30 @@
+<view class="titleSearch">
+<view class='search'>
+  <input type='text' 
+  		 placeholder='请输入您要搜索的公司' placeholder-class="placeholder" 
+         bindinput='searinput' 
+         bindconfirm='confirm' />
+  <icon type='search' class='icons'size="14"></icon>
+</view>
+</view>
+<view class="search-container">
+  <ul>
+    <block wx:for="{{list}}" wx:for-item="item" wx:key="key">
+        <view catchtap="goGsdetail" data-entprzid="{{item.reId}}" class="searchlist">
+        <view style="width:15%" class="searchlist-l">
+       <image src="{{item.company.iconurl}}" class="col-image"></image>
+       </view>
+       <view  style="width:50%" class="searchlist-c">
+        <text class="col-class" >{{item.company.shortName}}</text>
+       <text class=" col-address" >{{item.company.address}}</text>
+          </view>
+          <view  style="width:35%" class="searchlist-r">
+           <text class="col-money" >{{money[item.salary]}}/月</text>
+          </view>
+        </view>
+     
+
+    </block>
+  </ul>
+  
+</view>

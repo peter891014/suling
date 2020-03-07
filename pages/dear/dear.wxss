@@ -1,0 +1,71 @@
+
+
+.swiper-tab{
+	width: 100%;
+	text-align: center;
+  height: 100rpx;
+	line-height:100rpx;
+  position:relative;
+  top: 0;
+  border-bottom:20rpx solid #ededed
+     }
+.swiper-tab-list{  
+  font-size:28rpx;
+   display: inline-block;
+	width:20%;
+	color: #777777;
+}
+.on{ 
+  color: #409eff;
+	border-bottom: 4rpx solid #409eff
+  }
+ 
+ swiper-item{
+   width: 100%;
+  min-height: 700rpx;
+  overflow-y:scroll;
+ }
+.swiper-box{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden;
+  background: #fff;
+   }
+.item-text{
+  width: 94%;
+ 
+ margin: 0 auto;
+ font-size: 30rpx;
+ color: #777;
+ font-family: "微软雅黑"
+}
+.item-titie{
+  text-align: center;
+  font-size: 34rpx;
+  color: #409eff;
+  padding-top:40rpx;
+  font-family: "微软雅黑";
+ 
+}
+.item-text-a{
+ text-indent:60rpx; 
+ padding-top:30rpx
+}
+.item-text-red{
+  padding-top: 40rpx;
+  color: red;
+  text-indent:0; 
+  font-size: 26rpx;
+ 
+}
+.item-text-b{
+   text-indent:10rpx; 
+   padding-top:20rpx
+}
+.item-text-c{
+   text-indent:10rpx; 
+   padding-top:20rpx;
+   color: #409eff;
+   margin-bottom: 10rpx
+}

@@ -1,0 +1,106 @@
+<!--index.wxml-->
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">待面试</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">面试结果</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">入职状态</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+   <swiper-item>
+   <view class="noData" wx:if="{{a==1}}">
+  <image src="../../images/yizhi/index/zwnr.png" mode="widthFix" class="noDataImg"></image>
+    <view bindtap='a'>暂无数据</view>
+</view>
+<view class="swiper-signa" wx:for="{{list1}}" wx:for-item="item" wx:key="key" bindtap="jumpup" data-entprzid="{{item.reId}}">
+        <view>
+          <view class="swiper-img">
+            <image src="{{item.iconurl}}"></image>
+          </view>
+          <view class="company">
+             <text>{{item.name}}</text>
+             </view>
+          <button class="remove" catchtap='remove' data-index="{{index}}">取消报名</button>
+            <view class="inter-location">
+            <view>面试时间:<text class="inter-job">{{item.interview_time}}</text></view>
+            <view>面试地点:<text class="inter-job">{{item.address}}</text></view>
+            <view>面试负责人:<text class="inter-job">{{item.contact_people}}</text></view>
+            <view>负责人电话:<text catchtap="makePhone" style="color:#409eff;font-size:28rpx;padding-left: 30rpx;" data-phone="{{item.contact_phone}}">{{item.contact_phone}}</text></view>
+        </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+  <view class="noData" wx:if="{{b==1}}">
+  <image src="../../images/yizhi/index/zwnr.png" mode="widthFix" class="noDataImg"></image>
+ <view bindtap='a'>暂无数据</view>
+</view>
+    <view wx:for="{{list2}}" wx:for-item="itemName" wx:key="key">
+      <view class="swiper-sign" wx:if="{{itemName.status == 4}}">
+        <view>
+          <view class="swiper-img">
+            <image src="{{itemName.iconurl}}"></image>
+          </view>
+          <view class="result">
+             <text>{{itemName.name}}</text>
+             <text class="enroll" style="color:{{changeenroll==false?'green':'red'}}">已拒绝</text>
+             </view>
+          <!-- <view class="site">
+          <text>{{item.address}}</text>
+          </view> -->
+        </view>
+      </view>
+       <view class="swiper-signb">
+        <view>
+          <view class="swiper-img">
+            <image src="{{itemName.iconurl}}"></image>
+          </view>
+          <view class="result">
+             <text>{{itemName.name}}</text>
+             <text class="enroll" style="color:{{changeenroll==ture?'green':'red'}}">已录取</text>
+             </view>
+          <!-- <view class="site">
+          <text>{{item.address}}</text>
+          </view> -->
+          <view class="onform">
+            <text>恭喜您已经被{{itemName.name}}录取，请于{{itemName.entry_time!=null?itemName.entry_time:'明天上午九点'}}，携带身份证复印件、体检单等相关证件来我公司入职。详细信息，请查苏领招聘公众号录取通知</text>
+          </view>
+        </view>
+      </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+        <view class="noData" wx:if="{{c==1}}">
+  <image src="../../images/yizhi/index/zwnr.png" mode="widthFix" class="noDataImg"></image>
+    <view bindtap='a'>暂无数据</view>
+    </view>
+    <view wx:for="{{list3}}" wx:for-item="item" wx:key="key">
+      <view class="swiper-sign" wx:if="{{item.status == 9}}">
+        <view>
+          <view class="result">
+             <view class="enrall">{{item.name}}</view>
+             <view class="enroll" style="color:{{changeenroll==true?'green':'red'}}">未入职</view>
+             </view>
+             <view class="com-details">
+             <text>{{item.introduction}}</text>
+          </view>
+          <!-- <view class="site">
+          <text>{{item.address}}</text>
+          </view> -->
+        </view>
+      </view>
+      <view class="swiper-sign">
+        <view>
+          <view class="swiper-img">
+            <image src="{{item.iconurl}}"></image>
+          </view>
+          <view class="result">
+                <view class="enrall">{{item.name}}</view>
+             <view class="enroll" style="color:{{changeenroll==true?'green':'red'}}">已入职</view>
+             </view>
+          <!-- <view class="site">
+          <text>{{item.address}}</text>
+          </view> -->
+        </view>
+      </view>
+      </view>
+    </swiper-item>
+</swiper>

@@ -1,0 +1,34 @@
+/* pages/search/Idea/Idea.wxss */
+.Container{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 120rpx;
+border-bottom: 1rpx solid #ededed
+}
+.Container-text{
+text-align: center;
+padding-top:20rpx
+}
+.text-time{
+text-align: center;
+padding-top: 10rpx;
+font-size: 26rpx;
+color: rgb(199, 196, 196)
+}
+.Container-idea{
+width: 96%;
+margin: 0 auto;
+margin-top: 20rpx;
+text-indent:20rpx
+}
+.Container-idea text{
+font-size: 26rpx;
+padding-top:20rpx
+}
+.Container-idea image{
+width:100%;
+height:300rpx;
+margin-top: 1%;
+border-radius:8rpx
+}

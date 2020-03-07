@@ -1,0 +1,66 @@
+<view wx:if="{{!visible}}">
+  <view wx:if="{{canIUse}}">
+    <view class='header'>
+      <image class='header-image' src='../../images/yizhi/index/sulinglog.png'></image>
+    </view>
+
+    <view class='content'>
+      <text class="content-title">申请获取以下权限</text>
+      <text class="content-text">获得你的公开信息(昵称，头像等)</text>
+    </view>
+    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="doLogin">
+      <text>授权登录</text>
+    </button>
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>
+<view class='index' wx:else>
+
+  <view class="firstTitle">
+    <view bindtap="loadLocation" class="firstImage">
+      <image class="icon_img" src="../../images/yizhi/index/address@2xb.png" />
+    </view>
+    <view class="firstAddress">
+      <text>{{county}}-{{street}}</text>
+    </view>
+    <view class="firstSearch">
+      <view class='searchBorder'>
+        <icon type='search' class='icons' size="14"></icon>
+        <input type='text' placeholder='{{bsshow}}' confirm-type="search" placeholder-class="placeholder" placeholder-style="color:#ffffff;" bindfocus="onBindfocus" bindblur="onBindblur" bindtap='searchConfirm'>
+        </input>
+      </view>
+    </view>
+  </view>
+<view class="bannar" style="background:url({{background}});background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%;">
+  <swiper indicator-dots="true" class="swiper" autoplay="true" circular indicator-color="#f1f1f1" indicator-active-color="#062f8e" interval="5000" duration="1000">
+    <block wx:for="{{banner}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.url}}" class="swiper-image" catchtap="showGoods"  data-id="{{item.id}}" mode="widthfit" />
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+  <view class="notices">
+    <view class="gg-button" catchtap="ggclick">
+      <image src="../../images/yizhi/index/news.png"></image>
+      <view class="notice-container">
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="3000">
+      <block wx:for="{{msgList}}" wx:for-item="item" wx:key="key">
+          <swiper-item>
+            <view class="gg-news">{{item.title}}</view>
+          </swiper-item>
+      </block>
+    </swiper>
+  </view>
+    </view>
+
+  </view>
+  <view class="userbottom">
+    <view class="userbottom-l" catchtap="gojrzp">
+      <text class="userbottom-text">今日招聘</text>
+    </view>
+     <view class="userbottom-ll" catchtap="law" >
+    <text class="userbottom-text2">法务咨询</text>
+  </view>
+  </view>
+</view>

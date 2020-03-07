@@ -1,0 +1,8 @@
+<view class='product-content'>
+  <import src="../../../wxParse/wxParse.wxml" />
+  <view class="wxParse">
+    <scroll-view style="height:2000rpx;" scroll-y='true'>
+      <template is="wxParse" data="{{wxParseData:detail_content.nodes}}" />
+    </scroll-view>
+  </view>
+</view>

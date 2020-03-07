@@ -1,0 +1,19 @@
+
+<view  >
+ 
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            <image  class='header-image' src='../../images/yizhi/index/sulinglog.png' ></image>
+        </view>
+ 
+        <view class='content'>
+            <text class="content-title">申请获取以下权限</text>
+            <text class="content-text">申请获得你微信绑定的手机号码</text>
+        </view>
+          <button open-type="getPhoneNumber" class="wxlogin"  bindgetphonenumber="getPhoneNumber">
+ 
+            <text>允许获取手机号</text>
+        </button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>

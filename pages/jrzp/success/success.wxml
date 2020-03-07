@@ -1,0 +1,6 @@
+<!--pages/jrzp/success/success.wxml-->
+<view class="success-contain"> 
+   <image class="success-img" src="../../../images/yizhi/index/完成@2x.png "></image>
+  <text class="success-text">报名成功</text>
+  <button class="success-button" type="primary" catchtap="jrzp">继续报名</button>
+</view>

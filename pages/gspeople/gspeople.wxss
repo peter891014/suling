@@ -1,0 +1,279 @@
+/* pages/jrzp/gspeople/gspeople.wxss */
+.resume-title{
+  width: 100%;
+  height:220rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  /* box-shadow: 0 2rpx 16rpx 2rpx skyblue; */
+  
+}
+.resume-imageTitle{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:50%;
+  margin:0 auto;
+  overflow: hidden
+}
+.resume-nameTitle{
+  color: skyblued;
+  text-align: center;
+  padding-top:30rpx;
+  font-weight: 600
+}
+.person-resume{
+  padding: 0;
+  margin: 0;
+  width: 100%
+}
+.resumeSubmit{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto
+
+}
+.placeholdeCenter{
+    text-align: left;
+   vertical-align: middle;
+   padding-left:10rpx
+}  
+.resumeContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #ededed
+}
+.resumeContainer-l{
+  font-weight: bold;
+width: 30%;
+font-size: 30rpx;
+text-align: right;
+color: #333;
+
+
+}
+.resumeContainer-r{
+width: 70%;
+
+font-size: 28rpx;
+color: #666;
+
+
+}
+.resumeContainer-r radio-group{
+  padding-left: 40rpx
+}
+.resumeContainer-r input{
+padding-left: 30rpx
+}
+
+/* 提交按钮 */
+.submitChange{
+   width: 100;
+   display: flex;
+   flex-direction: row;
+   margin-top: 40rpx
+}
+.submitButton{
+  width:60%
+}
+.resetButton{
+  width: 60%
+}/* pages/my-resume/my-resume.wxss */
+page{
+  background-color: #f5f6f9;
+  padding-bottom: 20rpx;
+}
+
+
+
+.header{
+  position: relative;
+  width: 100%;
+  height: 640rpx;
+}
+.bg-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.bg-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 80rpx;
+}
+.user-name{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+  font-weight: bold;
+  /*background: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.4));*/
+}
+.bg-2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 3;
+
+  height: 200rpx;
+}
+.header-info{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+
+  height: 200rpx;
+  padding: 0 28rpx;
+  color: #fff;
+  font-weight: bold;
+  /*background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4));*/
+}
+.header-position{
+  font-size: 32rpx;
+  margin-top: 60rpx;
+}
+.header-ser{
+  font-size: 28rpx;
+  margin-top: 24rpx;
+}
+.sex{margin-right: 40rpx;}
+.change-img{
+  position: absolute;
+  bottom: 48rpx;
+  right: 28rpx;
+  z-index: 9;
+
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background-color: #c7c7c9;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 4rpx;
+}
+
+
+.user-images{
+    width: 100%;
+    height: 340rpx;
+    background-color: #fff;
+    text-align: center;
+}
+
+.images-box{
+
+    margin-top: 60rpx;
+    display: inline-block;
+    
+}
+.change-text{
+    margin-top: 20rpx;
+    color: #a4a4a4;
+    font-size: 28rpx;
+}
+.images-box image{
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+}
+
+.panel{
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 20rpx;
+  padding: 0 40rpx 0 28rpx;
+  box-sizing: border-box;
+}
+.panel-hd{
+  padding: 28rpx 0;
+  font-size: 32rpx;
+  line-height: 1.4;
+  border-bottom: 1rpx dashed #dcdcdc;
+  color: #222;
+}
+
+.panel-bd{
+  padding-top: 30rpx;
+  line-height: 1.4;
+  font-size: 28rpx;
+}
+.base{
+  padding-bottom: 28rpx;
+  color: #333;
+}
+.data-text{
+  margin-left: 40rpx;
+  color: #999
+  }
+.edit-btn{
+  float: right;
+  font-size: 28rpx;
+  margin-top: 8rpx;
+}
+.icon-edit{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+.work-date{
+  color: #666;
+  margin-bottom: 20rpx;
+  position: relative;
+  left: -36rpx;
+}
+.work-company{
+  color: #666;
+  margin-bottom: 20rpx;
+  margin-left: 5rpx;
+  font-weight: 600;
+
+}
+.work-department{
+    margin-bottom: 20rpx;
+    color: red;
+}
+.work-content{
+  color: #999;
+  padding-bottom: 60rpx;
+}
+.box{
+  /* border-left: 1rpx dashed #4990E2; */
+  padding-left: 28rpx;
+}
+.dian{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 20rpx;
+  border: 4rpx solid #dbe2fc;
+  background-color: #4990E2;
+  margin-right: 20rpx;
+}
+.edu{margin-right: 40rpx;}
+.position{
+  color: #666;
+  margin-bottom: 24rpx;
+}
+.position-list{
+  color: #999;
+  padding-bottom: 24rpx;
+}

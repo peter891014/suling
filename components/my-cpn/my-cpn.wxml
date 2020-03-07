@@ -1,0 +1,9 @@
+<!--components/my-cpn/my-cpn.wxml-->
+<view class='box'>
+ <block  wx:for="{{listInfo}}"  wx:key="key">
+    <view  class='box_list {{currentIndex == index? "active":""}}'   bindtap="chooseImg" data-index="{{index}}">
+        <image class="box-image" src="{{item.curUrl}}"></image>
+        <text class="box-text">{{item.title}}</text>
+    </view>
+    </block>
+  </view>

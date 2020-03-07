@@ -1,0 +1,16 @@
+/* pages/edit-resume-work-detail/edit-resume-work-detail.wxss */
+@import "/style/item-cells.wxss";
+@import "/style/blue-btn.wxss";
+.btn-box{
+  margin-top: 80rpx;
+}
+.company wx-input{
+  width: 400rpx;
+}
+text{
+  color: #666;
+}
+view,input{
+  color: #222;
+  font-weight: bold;
+}

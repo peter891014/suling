@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+  
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#409eff",
+  "navigationBarTitleText": "亲，您来了",
+  "navigationBarTextStyle": "white"
+}

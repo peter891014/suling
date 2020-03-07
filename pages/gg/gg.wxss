@@ -1,0 +1,287 @@
+/* pages/gg/gg.wxss */
+page{
+  height: 100%;
+}
+.page-body{
+  position:relative;
+}
+.page-section {
+  width: 100%;
+  height: 422rpx;
+  display: block;
+}
+live-player {
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-body-buttona {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  bottom: 25rpx;
+  margin-left: 20rpx;
+  z-index: 100;
+  display: block;
+}
+.page-body-buttona1{
+  display: none;
+}
+.page-body-buttona2{
+  opacity:0;
+}
+.page-body-buttonb{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  bottom: 25rpx;
+  margin-left: 20rpx;
+  left: 0;
+  z-index: 100;
+}
+.page-body-buttonc {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  bottom: 25rpx;
+  right: 0;
+  margin-right: 20rpx;
+  z-index: 100;
+}
+.page-body-buttond{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  bottom: 25rpx;
+  right: 0;
+  margin-right: 20rpx;
+  z-index: 100;
+}
+.page-body-buttone{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: 0;
+  z-index: 100;
+  margin-right: 120rpx;
+}
+cover-image{
+  color:white;
+  width: 100%;
+}
+.chat-mode {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 90%;
+  height: 18px;
+  min-height: auto;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 30px;
+}
+.submit-chat {
+  height: 30px;
+  min-width: 100px;
+  font-size: 12px;
+  margin-left: 5px;
+  line-height: 30px;
+}
+live-player {
+  width: 100%;
+  height: 100%;
+}
+
+
+.swiper-tab{
+  width: 100%;
+  text-align: center;
+}
+.chat-inner li{
+    margin-left: 30rpx;
+    overflow: hidden;
+}
+/* .chat-inner li em{
+    color:green
+} */
+scroll-view{
+  height: 574rpx;
+}
+.company{
+  position: absolute;
+  top: 40rpx;
+  left: 150rpx;
+  font-size:32rpx;
+}
+.company .enroll{
+  margin-left:160rpx;
+}
+.com-details{
+  position: absolute;
+  top: 88rpx;
+  left: 150rpx;
+  font-size: 24rpx;
+}
+.com-details text {
+  margin:0 5rpx;
+}
+
+.swiper-timer{
+  position: absolute;
+  top:200rpx;
+  right: 50rpx;
+  color: red;
+  font-size: 26rpx;
+
+}
+.sizz{
+  overflow:auto;
+}
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    min-height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.swiper-tab-item{
+    width: 100%; 
+    height: 120rpx;
+    font-size: 40rpx;
+    text-align: center;
+    line-height: 120rpx;
+    color:#434343;
+}
+.active{
+    color:#F65959;
+    border-bottom: 4rpx solid #F65959;
+}
+swiper{
+  position: relative;
+  height: 58%;
+}
+ .chat-notice{
+  font-size:26rpx;
+  color:red;
+  text-align: center;
+  padding-top: 30rpx
+}
+
+ .chat-news{
+word-wrap:break-word;
+word-break:break-all;
+overflow: hidden;
+margin:0 20rpx;
+min-height: 48rpx;
+}
+.chat-news text{
+  font-size:24rpx;
+  line-height: 48rpx;
+}
+.sendMessage{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #ececec;
+  width: 100%;
+}
+.sendMessage button{
+  width:120rpx;
+  float: right;
+  color:#fff;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 20px;
+  align-self: flex-end;
+  font-size: 20rpx;
+}
+.inputMsg{
+    width: 480rpx;
+    flex: 2;
+    background-color:#fff;
+    height: 30px;
+    font-size: 16px;
+    padding:5px 10px;
+    float: left;
+}
+.itema{
+  width: 100%;
+  min-height: 700rpx;
+  overflow-y:scroll;
+  background-color: #ededed
+}
+.swiper-sign{
+  width: 720rpx;
+  min-height: 268rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top:27rpx;
+  position: relative;
+}
+.swiper-sign .swiper-img {
+  width:100rpx;
+  height:100rpx;
+  position: absolute;
+  top: 34rpx;
+  left: 30rpx
+  
+}
+.swiper-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden
+}
+company{
+  position: absolute;
+  top: 40rpx;
+  left: 180rpx;
+  font-size: 28rpx;
+}
+.company .enroll{
+  margin-left:160rpx;
+}
+.com-details{
+  position: absolute;
+  top: 88rpx;
+  left: 180rpx;
+  font-size: 22rpx;
+}
+.com-details text {
+  margin:0 5rpx;
+}
+.site {
+  width:80%;
+  position: absolute;
+  top:200rpx;
+  left:30rpx;
+  font-size: 26rpx;
+  color: #777
+}
+.aon{
+position: absolute;
+white-space:nowrap;/* 防止向下换行*/
+animation-timing-function: linear;
+animation-fill-mode: none;
+z-index: 100;
+}
+.doommview{
+  z-index: 100;
+  height: 360rpx;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+@keyframes first{
+  from{left: 100%; }
+  to{left: -100%;}
+}
+

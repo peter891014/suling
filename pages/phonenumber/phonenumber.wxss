@@ -1,0 +1,61 @@
+page {
+ background:#ededed;
+}
+.header{
+  width: 90%;
+ 
+  height: 300rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #d2d2d2;
+      display: flex;
+  justify-content: center;
+  align-items: center
+}
+.header-image{
+  width: 140rpx;
+  height: 140rpx;
+   display: inline-block;
+  text-align: center;
+ left: 50%;  
+  margin-top: 80rpx;
+   border-radius: 100rpx;
+  
+}
+.content{
+  display: flex;
+  flex-direction:column
+
+}
+.content-title{
+  margin-left: 30rpx;
+ margin-top: 60rpx;
+ font-size:32rpx
+ 
+}
+.content-text{
+  margin-left: 30rpx;
+ padding-top: 30rpx;
+  color: #999;
+  font-size: 26rpx;
+  letter-spacing:1rpx;
+}
+.bottom{
+  width: 90%;
+  height: 88rpx;
+  border-radius: 50rpx;
+  margin-top:120rpx
+  
+}
+.bottom text{
+  vertical-align: middle;
+  margin: 0 auto
+}
+
+.wxlogin {
+  color: black;
+ width: 90%;
+ background: #52cf47;
+ padding-top: 5rpx;
+ margin-top: 60rpx
+
+}

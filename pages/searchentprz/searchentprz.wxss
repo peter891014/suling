@@ -1,0 +1,91 @@
+/* pages/search-gs/search-gs.wxss */
+.titleSearch{
+  background-color: #409eff;
+  height: 120rpx;
+  width: 100%;
+  position: absolute;
+  margin-top: 0
+  
+ 
+}
+.search{
+  position: relative;
+  width: 90%;
+  margin: 20rpx auto;
+  background-color: #fff;
+  border-radius: 60rpx
+}
+.search input{
+ padding-left:170rpx;
+ height:80rpx;
+ color: #666;
+ font-family: "微软雅黑";
+ font-size: 30rpx;
+ letter-spacing: 2rpx 
+}
+.placeholder{
+  color: #ccc;
+  padding-left:6rpx
+  }
+.icons{
+  position: absolute;
+  right: 30rpx;
+  top:24rpx;
+}
+/* .lists{
+  text-align: center;
+  margin-top: 30rpx;
+  color: rgb(230, 124, 25);
+} */
+.search-container{
+   position: absolute;
+   width: 100%;
+  top:120rpx
+}
+.searchlist{
+  width: 100%;
+  height:120rpx;
+  display: flex;
+  flex-direction: row;
+box-shadow: 0 4rpx 8rpx 0 #d1d1d1
+  
+}
+.col-image{
+  width: 80rpx;
+  height:80rpx;
+  border-radius: 50%;
+  margin-left:40rpx;
+  margin-top:20rpx
+
+}
+.searchlist-l{
+  margin: 0 auto
+}
+.searchlist-c{
+  display: flex;
+  flex-direction: column;
+}
+.searchlist-r{
+margin-top: 20rpx
+}
+.col-address{
+  color: #999;
+  font-size:22rpx;
+  padding-top:20rpx;
+  padding-left:28rpx
+}
+.col-class{
+  font-family: "黑体";
+   margin-top:20rpx;
+   padding-left:30rpx
+}
+.col-money{
+  color: red;
+  font-size:27rpx;
+  text-align: center;
+  padding-left: 70rpx;
+  line-height: 45px;
+ 
+  
+}
+/* pages/searchentprz/searchentprz.wxss */

@@ -1,0 +1,5 @@
+<!--pages/openarea/openarea.wxml-->
+<text>目前苏领公众平台已经开通苏州区域，如果需要找工作的朋友可以去咨询</text>
+<view class="map">
+     <map id="map" longitude="120.768237" latitude="31.287167" controls markers="{{markers}}" polyline style="width:100%;height:400rpx"> </map>
+</view>

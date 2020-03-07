@@ -1,0 +1,9 @@
+<view class="page-body">
+  <view class="page-section tc">
+    <video id="player" src="{{flv}}" mode="RTC" bindstatechange="statechange" binderror="error" style="width:750rpx; height:422rpx ;">
+    </video>
+  </view>
+</view>
+    <view class="swiper-tab-item">企业介绍</view>
+    <text>  天美仕（苏州）有限公司于2006年12月8日由韩国研二情报通信株式会社投资成立的外商独资企业。现厂房三处，一处坐落在苏州工业园区东景工业坊8号厂房，二处坐落于苏州东景工业坊11号厂房，三处坐落于苏州工业园区瑞丰路东和广电厂房内，注册资本为500万美元，主要生产液晶显示器用驱动控制模组（TFT-LCD PBA）、LED-BAR、电脑电子产品用记忆储存模组（MEMDRY MOULD）等高科技产品。
+现公司三处生产线合计28条生产线，员工人数大约1000人左右，产品主要出口韩国。公司主要客户为三星、LG等大型韩国企业。</text>

@@ -1,0 +1,18 @@
+<!--pages/search/search.wxml  bindtap="goDetail({{item.id}})"-->
+<view class="searchContainer">
+
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="key">
+    <text></text>
+    <navigator url='./newsdetail/newsdetail?id={{item.id}}'>
+    <view class="Container-title">
+      <view class="Container-image">
+        <image src="{{item.url}}"></image>
+      </view>
+      <view class="Container-text">
+        <text>{{item.title}}</text>
+        <text class="text-time">{{item.createTime}}</text>
+      </view>
+    </view>
+    </navigator>
+  </block>
+</view>

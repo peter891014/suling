@@ -1,0 +1,15 @@
+<view class='table'>
+  <view class="tr">
+    <view class="th">积分</view>
+    <view class="th">时间</view>
+    <view class="th">数量</view>
+    <view class="th">去处</view>
+  </view>
+  <view class="tr" wx:for="{{list}}" wx:key="list">
+    <view class="td">{{item.points}}</view>
+    <view class="td">{{item.prodTime}}</view>
+    <view class="td" wx:if="{{item.add}} != null">+{{item.add}}</view>
+    <view class="td" wx:else>-{{item.delete}}</view>
+    <view class="td">{{item.prodMode}}</view>
+  </view>
+</view>

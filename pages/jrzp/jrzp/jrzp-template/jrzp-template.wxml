@@ -1,0 +1,7 @@
+<template name="jrzpTemplate">
+  <li>
+    <image class="jrzp-image" src="{{company.iconurl}}"></image>
+    <text class="jrzp-text">{{company.shortName}}</text>
+  </li>
+
+</template>

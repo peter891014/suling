@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "i-notice-bar": "../../dist/notice-bar/index"
+  },
+  "navigationBarTitleText": "企业公告"
+}

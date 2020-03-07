@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+      "my-cpn": "/components/my-cpn/my-cpn",
+      "my-ccn": "/components/my-ccn/my-ccn",
+        "Select": "/components/select/select"
+  
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#409eff",
+  "backgroundColor": "#333",
+  "navigationBarTitleText": "今日招聘",
+  "navigationBarTextStyle": "white"
+ 
+}

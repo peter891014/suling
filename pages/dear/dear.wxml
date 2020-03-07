@@ -1,0 +1,93 @@
+<!-- index.wxml
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">企业简介</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">直播时间</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">面试流程</view>
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">服务站点</view>
+    <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">商务合作</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+   <swiper-item>
+      <view class="item-text">
+      <view class="item-titie">苏领职业人力资源有限公司</view>
+      <view class="item-text-a">苏州市苏领职业人力资源有限公司隶属于苏州聚缘阁智能科技集团，坐落于江苏东南部、长江三角洲中部的”东方威尼斯“之称的历史文化名城苏州。苏领职业定位于中国蓝领市场的招聘服务商，开启中国蓝领招聘市场的 OMO融合革命，赋能促进传统人力资源企业。在移动互联网时代下，通过线上线下的链接与融合，促进招聘企业与员工的觉醒、参与和应用，现实蓝领招聘市场全自动化闭环。</view>
+<view class="item-text-a">苏领职业以”做员工和企业最信赖的伙伴“为服务宗旨，”解决行业求职招聘难题，让行业求职招聘零距离“为企业使命，致力于成为蓝领诚信职介服务第一品牌。</view>
+<view class="item-text-a">苏领职业服务平台汇聚区域内90%招聘资源，为求职者提供移动端的实时招聘、信息检索、求职服务并在线提供真人化实时直播讲解、企业及岗位真实化介绍，同步线下提供专属服务站一站式专业服务，致力于为求职者解决求职、应聘服务，最大化便捷求职者，保障求职者利益最大化。</view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+    <view class="item-text">
+    <view class="item-text-a">
+    <view class="item-text-b">周一至周六，9：00-13：00</view>
+<view  class="item-text-red">备注：每一区域的招聘企业统一由区域直播室直播员讲解，求职者可根据择业目标区域进入相应直播室进行了解及咨询。直播内容实时、真实，求职者可进入直播室实时化了解当下招聘讯息。</view>
+</view>
+</view>
+    </swiper-item>
+    <swiper-item>
+    <view class="item-text">
+    <view class="item-text-a">
+    <view  class="item-text-b">1.求职者进入小程序（直播室）报名</view>
+    <view  class="item-text-b">2.求职者至就近服务站统一集合服务站安排专车输送求职者至目标企业面试。</view>
+     <view class="item-text-red">备注：（求职过程中不向求职者收取任何费用，如有此类现象请求职者明确拒绝并联系平台客服）</view>
+    </view>
+    </view>
+    </swiper-item>
+      <swiper-item>
+      <view class="item-text">
+    <view class="item-text-a">
+<view  class="item-text-c">斜塘服务站-联丰广场 </view>
+<view><map id="map" longitude="120.736163" latitude="31.296815" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}"  show-location style="width: 100%; height: 300rpx;"></map></view>
+
+    </view>
+    <view class="item-text-a">
+<view  class="item-text-c">跨塘服务站-创投工业坊 </view>
+<view><map id="map" longitude="120.675201" latitude="31.352171" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}"  show-location style="width: 100%; height: 300rpx;"></map></view>
+    </view>
+
+      <view class="item-text-a">
+<view  class="item-text-c">胜浦服务站-瑞翔商业广场</view>
+<view><map id="map" longitude="120.820679" latitude="31.307756" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}"  show-location style="width: 100%; height: 300rpx;"></map></view>
+    </view>
+
+      <view class="item-text-a">
+<view  class="item-text-c">娄葑北区服务站-双湖广场</view>
+<view><map id="map" longitude="120.671908" latitude="31.283113" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}"  show-location style="width: 100%; height: 300rpx;"></map></view>
+    </view>
+
+     <view class="item-text-a">
+<view  class="item-text-c">唯亭服务站-时尚舞台</view>
+<view><map id="map" longitude="120.821553" latitude="31.341955" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}"  show-location style="width: 100%; height: 300rpx;"></map></view>
+    </view>
+
+    <view class="item-text-a">
+<view  class="item-text-c">甪直服务站-甪直高级中学</view>
+<view><map id="map" longitude="120.863600" latitude="31.252213" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}"  show-location style="width: 100%; height: 300rpx;"></map></view>
+    </view>
+
+     <view class="item-text-a">
+<view class="item-text-c">车坊服务站-松泽家园一区</view>
+<view><map id="map" longitude="120.744596" latitude="31.244324" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}"  show-location style="width: 100%; height: 300rpx;"></map></view>
+    </view>
+    
+     <view class="item-text-a">
+<view  class="item-text-c">娄葑南区服务站-双银国际</view>
+<view><map id="map" longitude="120.681124" latitude="31.267657" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}"  show-location style="width: 100%; height: 300rpx;"></map></view>
+    </view>
+    <view  class="item-text-red">备注：线下服务站提供专车接送求着者，求职者报名成功即可查看或咨询周边接送专车，统一安排接送至服务站安排面试。</view>
+      <view style="width:100%;height:100rpx"></view>
+    </view>
+    </swiper-item>
+       <swiper-item>
+      <view class="item-text">
+    <view class="item-text-a">
+  
+<view  class="item-text-b">1、公司名称：苏领职业人力资源有限公司</view>
+<view  class="item-text-b">2、总部地址：苏州园区东富路9号东景工业坊38幢</view>
+<view  class="item-text-b">3、客服咨询：0512-62373000</view>
+ </view>
+    </view>
+    </swiper-item>
+</swiper> -->
+
+<view wx:for="{{banner}}" wx:key="key"><image style="width:100%;height:800rpx" src="{{item}}"></image></view>
+

@@ -1,0 +1,4 @@
+/* pages/openarea/openarea.wxss */
+.map{
+  margin-top: 30rpx
+}

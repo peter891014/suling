@@ -1,0 +1,13 @@
+<!--pages/search-gs/search-gs.wxml-->
+
+<view class='search'>
+  <input type='text' 
+  		 placeholder='请输入您要搜索的公司' placeholder-class="placeholder"
+         bindinput='input' 
+         bindconfirm='confirm'/>
+  <icon type='search' class='icons'size="18"></icon>
+  <view wx:for="{{list}}"  wx:key='key' class='lists'>
+    <text wx:if="{{item.show}}">{{item.name}}</text>
+  </view>
+</view>
+

@@ -1,0 +1,62 @@
+<view class="container">
+  <swiper indicator-dots="true" autoplay="true" circular indicator-color="#f1f1f1" indicator-active-color="#062f8e" interval="5000" duration="1000" style="height:550rpx;">
+    <block wx:for="{{banner}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.url}}" class="swiper-image" bindtap="showGoods" mode="widthfit" style="width:100%;height:550rpx;" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="row" bindtap="showAreaSelector">
+
+  <view class="flex" wx:if="{{locationName}}">
+    <!-- <image class="icon_img" src="/images/yizhi/index/address@2xb.png" /> -->
+    <view class="flex-view">
+      <text class="flex-text"> {{locationName}}</text>
+      <text class="flex-area">[切换区域]</text>
+    </view>
+  </view>
+  <view class="flex" wx:else>
+    <!-- <image class="icon_img" src="/images/yizhi/index/address@2xb.png" /> -->
+    <view class="flex-view">
+      <view style="width:100%;height:20rpx"></view>
+      <text class="flex-text">选择地区</text>
+      <text class="flex-area">[切换区域]</text>
+    </view>
+
+  </view>
+
+
+</view>
+<view wx:if="{{!hascontent}}" class="hascontent">
+  暂无内容
+</view>
+<view wx:elif="{{hascontent}}" class='list'>
+  <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
+    <view class="list_item">
+      <navigator wx:if="{{!aaa}}" url='../gg/gg?locationId={{item.locationId}}'>
+        <view class='img'>
+          <image src='{{item.imgCoverurl}}'></image>
+        </view>
+        <view class='info'>
+          <view class='title'>{{item.roomname}}企业介绍</view>
+          <view class='num'>
+            <text style="color:red;font-size:50rpx;margin-right:10rpx">{{item.onlines}}</text>人在线收看</view>
+        </view>
+      </navigator>
+      <navigator wx:if="{{aaa}}" url='../webview/webview?url={{item.flv}}'>
+        <view class='img'>
+          <image src='{{item.imgCoverurl}}'></image>
+        </view>
+        <view class='info'>
+          <view class='title'>{{item.roomname}}企业介绍</view>
+          <view class='num'>
+            <text style="color:red;font-size:50rpx;margin-right:10rpx">{{item.onlines}}</text>人在线收看</view>
+        </view>
+      </navigator>
+      <view class='clear'></view>
+    </view>
+  </block>
+</view>
+
+<include src="../../view/areaSelector/selector.wxml" />

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "i-input": "../../../dist/input/index",
+    "i-panel": "../../../dist/panel/index"
+    
+    },
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#409eff",
+  "navigationBarTitleText": "创建简历",
+  "navigationBarTextStyle": "white"
+  
+}

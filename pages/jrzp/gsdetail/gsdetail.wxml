@@ -1,0 +1,191 @@
+<!--pages/jrzp/gsdetail/gsdetail.wxml-->
+<view class="gscontainer">
+  <view class="gsbanner">
+    <swiper indicator-dots="true" autoplay="true" circular indicator-active-color="#062f8e" indicator-color="#f1f1f1" interval="5000" duration="1000">
+      <block wx:for="{{banner}}" wx:key="key">
+        <swiper-item>
+          <image src="{{item.bannerUrl}}" bindtap="showGoods" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 公司信息 -->
+  <view class="gscontainer-all">
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-logoStyle">
+          <view class="gscontainer-logo">
+            <image class="gscontainer-logos" src="{{recruit.company.iconurl}}"></image>
+          </view>
+          <view class="gscontainer-contain gscontainer-people">
+            <view class="gscontainer-containa">{{recruit.company.name}}</view>
+            <view class="gscontainer-address">{{recruit.company.address}}</view>
+          </view>
+        </view>
+
+        <!-- <view class="gscontainer-Job">招聘岗位：普工</view> -->
+        <view class="gscontainer-containd">
+          <view>{{money[recruit.salary]}}
+            <text class="gscontainer-month">\t元/月</text> </view>
+          <!-- <view><image class="gscontainer-images" catchtap="isCollectedTap" src="{{isCollected==1 ?'/images/yizhi/index/shoucang-3.png':'/images/yizhi/index/shoucang-2.png'}}"></image></view> -->
+        </view>
+
+
+      </view>
+    </view>
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-title">企业简介</view>
+        <view class="gscontainer-cStyle">
+          {{recruit.company.introduction}}
+        </view>
+      </view>
+    </view>
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listwork">
+        <view class="gscontainer-title">岗位描述</view>
+        <!-- <view class="gscontainer-money">4000元</view> -->
+      </view>
+      <view class="gscontainer-cStyle">
+        {{recruit.requirement}}
+      </view>
+    </view>
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-title">薪资结构</view>
+        <view class="gscontainer-cStyle">
+          <view>
+            <text>{{recruit.structure}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-title">福利待遇</view>
+        <view class="gscontainer-cStyle">
+          <view>
+            <text>{{recruit.welfare}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-title">备注</view>
+        <view class="gscontainer-cStyle">
+          <view>
+            <text>{{recruit.remark}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-title">特殊要求</view>
+        <view class="gscontainer-cStyle">
+          <view>
+            <text>{{recruit.special}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-title">面试时间</view>
+        <view class="gscontainer-cStyle">
+          <view>
+            <text>{{recruit.interviewTime}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-title">招聘进程</view>
+        <view class="gscontainer-cStyle">
+          <view>
+            本岗位招收
+            <text class="zhao">{{recruit.recruitmentNumber}}</text>人，现已招收
+            <text class="zhao">{{recruit.enrollment}}</text>人。
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-title">站点选择</view>
+        <view class="gscontainer-cStyle">
+          <picker class="item-cell-ft blue" bindchange="bindPicker" value="{{site}}" range="{{siteName}}">
+            <view class="picker">
+              {{siteName[site]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class="gscontainer-list">
+      <view class="gscontainer-listmessage">
+        <view class="gscontainer-title">招聘负责</view>
+        <view class="gscontainer-dStyle">
+          <view>
+            公司负责人：
+            <text>{{recruit.company.contactPeople}}</text> 联系方式：
+            <text catchtap="makePhone" style="color:#062f8e;font-size:32rpx" data-phone="{{recruit.company.contactPhone}}">{{recruit.company.contactPhone}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class="bottom-title">
+  <view class="Warm-prompt">温馨提示：</view>
+  <view class="Platform-Reporting">本平台承诺该公司名下所有职位不向您收取费用，如有不实，请立即向我平台举报举报！
+    <view class="bottom-free"></view>
+  </view>
+
+</view>
+
+
+<view class="gsbottom">
+  <view class="gsbottom-center">
+    <button catchtap="clickme" class="gscontainer-fx">
+      <image class="gscontainer-fimages" src='/images/yizhi/index/share.png'></image>
+      <text class="button-fclass">分享</text>
+    </button>
+    <!--屏幕背景变暗的背景  -->
+  
+    <button catchtap="isCollectedTap" class="gscontainer-sc">
+      <image class="gscontainer-images" src="{{isCollected==1 ?'/images/yizhi/index/shoucang-3.png':'/images/yizhi/index/shoucang-2.png'}}"></image>
+      <text class="button-fclass">收藏</text>
+    </button>
+    <view wx:if="{{aaa}}" catchtap="handlevideo" hover-class="success-hover" class="success-button" data-reId="{{recruit.reId}}">
+      <text class="button-class">招聘直播</text>
+    </view>
+    <view catchtap="handleface" type="primary" class="warning-button" style="background:{{viewbgn}}">
+      <text class="button-class">{{signup}}</text>
+    </view>
+  </view>
+</view>
+
+ 
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!--弹出框  -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <button bindtap="getQrcode">分享到朋友圈</button> <button  open-type="share">分享给好友</button>
+  </view>
+
+   <canvas-share bindclose="close" userInfo="{{userInfo}}" resultImage="{{resultImage}}" visible="{{visible}}" />

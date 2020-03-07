@@ -1,0 +1,63 @@
+
+<!--pages/jrzp/jrzp.wxml-->
+<!--pages/jrzp/jrzp.wxml-->
+<import src="jrzp-template/jrzp-template.wxml" />
+<!-- 区域选择/行业选择 -->
+
+
+
+ <view class="allProsition">
+<view class="jrzp-head">
+  <view class="jrzp-headContainer">
+   <view class="jrzp-headContainer-l">
+   <view class="row" bindtap="showAreaSelector">
+  <view class="flex">
+       <!-- <image class="icon_img" src="/images/yizhi/index/address@2xb.png" /> -->
+   <text class="flex-city"> {{locationName}}</text>
+   <text class="flex-area">[切换区域]</text>
+  </view>
+  </view>
+  </view>
+  <!-- <view style="color:#fff">|</view>
+    <view class="jrzp-headContainer-r">
+           <Select prop-array='{{selectArray}}' bindindustry="handlerIndustry"/>
+    </view> -->
+  </view>
+</view>
+
+
+  <my-cpn  listInfo="{{listInfo}}" binditemclick="handleTabClick"/>
+ </view>
+
+<!-- 工作选择 -->
+<view class="place"></view>
+<!-- 公司选择 -->
+
+    <view class="jrzp-gc"  >
+      <view class="jrzp-g-nr">
+        <scroll-view style="height:100%"  scroll-y='true' bindscrolltolower='scrollToLower' bindscrolltoupper='scrollToUpper' lower-threshold='30' upper-threshold='0'>
+          <ul>
+            <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
+              <navigator url='../../jrzp/gsdetail/gsdetail?reId={{item.reId}}&locationId={{locationList}}'>
+
+                <template is="jrzpTemplate" data="{{...item}}" />
+
+              </navigator>
+
+            </block>
+          </ul>
+
+        </scroll-view>
+      </view>
+    </view>
+
+<!-- 直播间页面导航 -->
+
+<view wx:if="{{aaa}}" class="jrzp-zbj">
+  <view class="jrzp-button" catchtap="goVideo">
+    <image class="jrzp-img" src="/images/yizhi/index/zhibo.jpg"></image>
+    <text class="jrzp-text1">直播招聘</text>
+  </view>
+</view>
+
+<include src="../../../view/areaSelector/selector.wxml" />

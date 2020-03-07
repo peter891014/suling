@@ -1,0 +1,203 @@
+.swiper-tab{
+	width: 100%;
+	text-align: center;
+  height: 100rpx;
+	line-height:100rpx;
+  position:relative;
+  top: 0;
+     }
+.swiper-tab-list{  
+  font-size:28rpx;
+   display: inline-block;
+	width:33.333333%;
+	color: #777777;
+}
+.on{ 
+  color: #409eff;
+	border-bottom: 4rpx solid #409eff
+  }
+ 
+ swiper-item{
+   width: 100%;
+  min-height: 700rpx;
+  overflow-y:scroll;
+ }
+.swiper-box{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden;
+  background: #ededed;
+   }
+
+.swiper-signa{
+  width:94%;
+  height:360rpx;
+  background: #fff;
+  margin: 0 auto;
+  margin-top:26rpx; 
+  position: relative;
+  border-radius:20rpx;
+  box-shadow: 0 0 16rpx 0 #85bff8
+}
+.swiper-signa .swiper-img {
+  width:90rpx;
+  height:90rpx;
+  position: absolute;
+  top:12rpx;
+  left: 30rpx;
+ 
+}
+.swiper-img image {
+  width: 100%;
+  height: 100%;
+   border-radius: 50%;
+  overflow: hidden;
+}
+.company{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:36rpx;
+  left:130rpx;
+  letter-spacing:4rpx;
+  font-size: 25rpx;
+}
+.company .company-name{
+  font-size:32rpx;
+  color:#333333;
+  font-family: "黑体";
+ 
+}
+.company-address{
+   font-size:24rpx;
+  color:#d1d1d1;
+  font-family: "微软雅黑";
+  padding-top:10rpx
+}
+.result{
+  font-size: 28rpx;
+  position: absolute;
+  margin-left: 130rpx;
+   margin-top: 60rpx;
+}
+.enrall{
+   position: absolute;
+  top:30rpx;
+  left:50rpx;
+  letter-spacing:4rpx;
+  font-size: 30rpx;
+}
+  .enroll{
+  position: absolute;
+  top:30rpx;
+  right:30rpx;
+  letter-spacing:4rpx;
+  font-size: 30rpx;
+  float:left;
+}
+.com-details{
+  position: absolute;
+  top: 88rpx;
+  left:150rpx;
+  font-size:24rpx;
+  color:#999
+}
+.com-details text {
+  margin:0 5rpx; 
+}
+.site {
+  width:400rpx;
+  position: absolute;
+  top: 150rpx;
+  left:30rpx;
+  font-size: 28rpx;
+}
+.site text{
+  color: #999;
+
+}
+
+.inter-location{
+  position: absolute;
+  top:90rpx;
+  left:30rpx;
+}
+.inter-location view{
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+  text-align: justify;
+  padding-top: 10rpx;
+  letter-spacing: 1rpx
+}
+.inter-job{
+  color: #666;
+  padding-left: 15rpx;
+}
+
+.onform {
+  position: absolute;
+  top: 120rpx;
+  padding: 30rpx;
+  font-size:22rpx;
+  color: #ff0000;
+  text-align: left;
+}
+.swiper-signb{
+  width: 94%;
+  min-height:280rpx;
+  background: #ffffff;
+  box-shadow: 0 0 16rpx 0 #85bff8;
+  margin: 0 auto;
+  margin-top:26rpx; 
+  position: relative;
+  border-radius:20rpx
+}
+.swiper-sign{
+   width:94%;
+  min-height:120rpx;
+  background: #fff;
+  box-shadow: 0 0 16rpx 0 #85bff8;
+  margin: 0 auto;
+  margin-top:26rpx; 
+  position: relative;
+  border-radius:20rpx
+}
+.swiper-signb .swiper-img {
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  top: 34rpx;
+  left: 30rpx;
+}
+.remove{
+  width: 160rpx;
+  height:70rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom:20rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 70rpx;
+  letter-spacing:2rpx;
+  display: inline-block;
+  background-color: #F56C6C;
+  color: #fff
+}
+.noData{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  justify-content: center;
+  align-items: center;
+}
+.noData image{
+  width:300rpx;
+}
+.noData view{
+  font-size: 24rpx;
+  color:#888;
+  margin-top: 40rpx;
+}

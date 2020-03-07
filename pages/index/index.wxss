@@ -1,0 +1,400 @@
+page{
+ background:#ededed;
+ height: 100%;
+ width: 100%;
+}
+.index{
+  height: 100%;
+}
+.header{
+  width: 90%;
+  height: 300rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #d2d2d2;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.header-image{
+  width: 140rpx;
+  height: 140rpx;
+   display: inline-block;
+  text-align: center;
+ left: 50%;
+  margin-top: 80rpx;
+   border-radius: 100rpx;
+
+}
+.content{
+  display: flex;
+  flex-direction:column
+
+}
+.content-title{
+  margin-left: 30rpx;
+ margin-top: 60rpx
+}
+.content-text{
+  margin-left: 30rpx;
+ padding-top: 30rpx;
+  color: #999
+}
+.bottom{
+  width: 90%;
+  height: 88rpx;
+  border-radius: 50rpx;
+  margin-top:120rpx
+
+}
+.bottom text{
+  vertical-align: middle;
+  margin: 0 auto
+}
+.firstTitle{
+ display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 9%;
+  line-height: 120rpx;
+  background-color: #198BFF;
+  margin-top: 1rpx
+}
+.icon_img {
+  width: 20rpx;
+  height: 28rpx;
+
+  margin-left:36rpx;
+  margin-top: 48rpx
+
+}
+.firstImage{
+  width:8%;
+  height: auto
+}
+.firstAddress{
+  width:26%;
+ font-size:24rpx;
+  vertical-align: left;
+ padding-left: 26rpx;
+ color: #ffffff;
+}
+.firstSearch{
+width: 66%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center
+}
+.searchBorder{
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  height:70rpx;
+  border-radius:60rpx;
+  /* border: 1rpx solid #e1e1e1 */
+  background:#146fcc;
+  /* opacity:0.2; */
+}
+
+.searchBorder input{
+width: 80%;
+text-align:left;
+margin-left:10rpx;
+align-items: center;
+justify-content: center;
+padding-top: 15rpx;
+font-family: "微软雅黑";
+font-size: 30rpx;
+letter-spacing: 2rpx;
+}
+.icons {
+  margin-left:40rpx;
+  margin-top:-9rpx;
+}
+
+.placeholder{
+  color: #fff;
+  font-size: 28rpx;
+  vertical-align: middle;
+  margin-left:10rpx;
+  letter-spacing: 2rpx
+}
+
+.left_index {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  flex-wrap: nowrap;
+}
+
+.irowindex1 {
+  padding-top: 20rpx;
+  height: 90rpx;
+}
+
+
+
+.right_index {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding-left: 30rpx;
+  flex-wrap: nowrap;
+}
+
+.row_two {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.image1 {
+  display: flex;
+  margin: 10rpx;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 40%；;
+}
+
+.row_two1 {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  width: 40%；;
+}
+
+.container {
+  padding: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.56rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.row text {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.row input {
+  font-size: 0.7rem;
+  flex-grow: 3;
+  border: 1px solid #09c;
+  display: inline-block;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.15rem #aaa;
+  padding: 0.3rem;
+}
+
+.wxlogin {
+  color: black;
+ width: 100%;
+ background: #52cf47;
+ padding-top: 5rpx
+}
+ /* //background: #52cf47; */
+/**index.wxss**/
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* <!-- 定位和搜索开始 --> */
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100rpx;
+}
+
+.userinfo-i {
+  height: 100rpx;
+  width: 35%;
+  margin-left: 30rpx;
+}
+
+.userinfo-i image {
+  height: 38rpx;
+  width: 30rpx;
+  margin: 0 auto;
+}
+
+.userinfo .userinfo-t {
+  font-size: 32rpx;
+  color: #666;
+  margin-left: 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.userinfo-right {
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #ededed;
+  border: 1rpx solid #999;
+  border-radius: 25rpx 25rpx 25rpx 25rpx;
+}
+
+.userinfo-right input {
+  font-size: 24rpx;
+  text-align: center;
+  color: green;
+  vertical-align: middle;
+}
+
+.search {
+  position: relative;
+  margin-right: 10rpx;
+}
+
+.search input {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  height: 30px;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  margin: 0 auto
+}
+
+
+
+/* <!-- 定位和搜索结束 --> */
+
+/* <!--  首页banner开始 --> */
+
+
+/* <!--  首页banner结束 --> */
+.notices{
+  width: 100%;
+   height: 9%;
+   background-color: #fff
+}
+.notice{
+  display: flex;
+  flex-direction: row;
+  width:90%;
+  height: 100rpx;
+  margin: 0 auto;
+}
+.notice-logo{
+  width: 15%;
+  height:100rpx;
+  line-height: 100rpx;
+}
+.notice-logo image {
+  width: 50rpx;
+  height: 40rpx;
+  margin-top: 28rpx
+
+}
+.bannar{
+  width: 100%;
+  height: 37%;
+}
+.swiper{
+  width: 690rpx;
+  height: 382rpx;
+  margin: 0 auto;
+  display: block;
+}
+.swiper swiper-item{
+  width: 100%;
+  height: 100%;
+}
+.swiper swiper-item image{
+  width: 100%;
+  height: 100%;
+  border-radius:34rpx;
+}
+.notice-container {
+  width: 70%;
+  height:100rpx;
+  line-height: 100rpx;
+  margin-left: 200rpx;
+}
+.swiper_container {
+
+  height:100rpx;
+  width: 100%;
+}
+
+.swiper_item {
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gg-button {
+  width: 100%;
+  height:100rpx;
+  line-height:100rpx;
+  border-top: 4rpx solid #ffff;
+}
+.gg-button image{
+  width: 100rpx;
+  height:35rpx;
+  /* margin-left: 10rpx; */
+  /* padding: 30rpx; */
+  float: left;
+  margin: 30rpx 30rpx 30rpx 30rpx;
+}
+.gg-news{
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #808080;
+  font-size: 26rpx;
+}
+/* <!--  今日招聘开始 --> */
+
+.userbottom {
+  position: relative;
+  width: 100%;
+  height:45%;
+  background: #ededed;
+}
+.userbottom-l{
+    width: 385rpx;
+    height: 160rpx;
+    background: red; 
+    background: linear-gradient(-55deg,transparent 110rpx,#FF8400 0) top right;
+    background-size:100% 100%;
+    background-repeat:no-repeat;  
+    border-radius:10px 0px 0px 10px;
+    position: absolute;
+    top: 32%;
+    left: 56rpx;
+}
+.userbottom-text{
+  line-height:160rpx;
+  font-size: 48rpx;
+  color: #fff;
+  margin-left:50rpx; 
+}
+.userbottom-ll{
+    width: 385rpx;
+    height: 160rpx;
+    background: linear-gradient(125deg,transparent 110rpx,#fff 0) top right;
+    background-size:100% 100%;
+    background-repeat:no-repeat;  
+    position: absolute;
+    top: 32%;
+    right: 56rpx;
+    border-radius:0px 10px 10px 0px;
+}
+.userbottom-text2{
+  line-height: 160rpx;
+  font-size: 48rpx;
+  color: #333333;
+  margin-left:130rpx; 
+}
+@import '../../model/model.wxss'

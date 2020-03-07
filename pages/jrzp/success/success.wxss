@@ -1,0 +1,24 @@
+/* pages/jrzp/success/success.wxss */
+.success-contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.success-img{
+  width:200rpx;
+  height: 200rpx;
+  margin-top: 200rpx;
+}
+.success-text{
+ font-size: 48rpx;
+ font-weight: bolder;
+ color: #2b85e4;
+ margin-top: 40rpx;
+}
+.success-button{
+  margin-top: 200rpx;
+  width: 400rpx;
+  height: 88rpx
+}
+

@@ -1,0 +1,19 @@
+
+.table{
+  border:1rpx solid #ccc;
+  width: 100%;
+}
+.tr{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th{
+  font-weight: 900;
+  font-size: 14px;
+}
+.th,.td{
+  padding: 10rpx;
+  width: 100%;
+  text-align: center;
+}

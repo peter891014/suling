@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+  "i-collapse": "../../../dist/collapse/index",
+  "i-collapse-item": "../../../dist/collapse-item/index",
+  "i-button": "../../../dist/button/index",
+  "i-drawer": "../../dist/drawer/index",
+  "canvas-share": "../share/share"
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#409eff",
+  "navigationBarTitleText": "企业详情",
+  "navigationBarTextStyle": "white"
+}

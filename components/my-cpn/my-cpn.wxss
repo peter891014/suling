@@ -1,0 +1,43 @@
+/* components/my-cpn/my-cpn.wxss */
+.box {
+    width: 100%;
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   background-color: #fff;
+   /* box-shadow: 0 0 12rpx 0 #72ffff  */
+   box-shadow: 0 0 12rpx 0 #999
+}
+.box_list{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  align-items: center;
+    justify-content: space-around;
+    margin-top: 10rpx;
+    
+  
+      
+}
+.box-image{
+    height:100rpx;
+    width:100rpx;
+    margin-bottom:2rpx;
+}
+.box-text{
+    font-size:30rpx;
+    
+    
+
+}
+.active{
+  color: red;
+   
+}
+.active text{
+  padding:6rpx 16rpx;
+  border-bottom: 4rpx solid red;
+  
+ 
+}

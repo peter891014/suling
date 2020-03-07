@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-modal": "../../dist/modal/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index",
+    "i-icon": "../../dist/icon/index"
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#198BFF",
+  "navigationBarTitleText": "苏领职业",
+  "navigationBarTextStyle": "white"
+}

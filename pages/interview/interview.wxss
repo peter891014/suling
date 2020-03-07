@@ -1,0 +1,113 @@
+
+.titleSearch{
+  background-color: #062f8e;
+  height: 120rpx;
+
+}
+.search{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 60rpx
+
+}
+.search input{
+  border:1px solid #ccc;
+  border-radius: 60rpx;
+  height:88rpx
+
+}
+.placeholder{
+  color: #ccc;
+  text-align: center
+  }
+.icons{
+  position: absolute;
+  right: 30rpx;
+  top:14px;
+}
+.lists{
+  text-align: center;
+  margin-top: 30rpx;
+  color: rgb(230, 124, 25);
+}
+.searchlist{
+  width: 100%;
+  height:120rpx;
+  /* border-bottom: 10rpx solid #ededed; */
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ededed
+}
+.col-image{
+  width: 90rpx;
+  height:90rpx;
+  border-radius: 50%;
+  margin-left:40rpx;
+  margin-top:15rpx
+}
+.searchlist-l{
+  float: left;
+  width: 20%;
+}
+.searchlist-c{
+  display: flex;
+  flex-direction: column;
+  margin-left:40rpx;
+  width:70%;
+
+}
+.searchlist-r{
+margin-top: 20rpx;
+width: 10%
+}
+.col-address{
+  color: #ccc;
+  font-size:22rpx;
+  padding-top:10rpx;
+
+}
+.col-class{
+  font-family: "微软雅黑";
+  font-weight: 600;
+  margin-top:20rpx;
+ font-size:24rpx;
+
+
+}
+.col-money{
+
+  color: red;
+  text-align: center;
+  padding-left: 40rpx;
+
+}
+.imag{
+  width:10%;
+  height:100%;
+  margin-right: 10rpx;
+}
+.imag image{
+  width:60rpx;
+  height:60rpx;
+   margin: 30rpx 20rpx
+}
+/* pages/searchentprz/searchentprz.wxss */
+
+.noData{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  justify-content: center;
+  align-items: center;
+}
+.noData image{
+  width:300rpx;
+}
+.noData view{
+  font-size: 24rpx;
+  color:#888;
+  margin-top: 40rpx;
+}
