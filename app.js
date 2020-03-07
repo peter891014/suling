@@ -71,7 +71,7 @@ App({
     openid: "",
     session_key: "",
     baseUrl: "https://www.sulinghr.com",
-    wssUrl:  "ws://192.168.1.101",
+    wssUrl:  "ws://192.168.1.1011",
     visiable: null
   },
 })
