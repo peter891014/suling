@@ -69,9 +69,10 @@ App({
     access_token:'',
     accessToken:'',
     openid: "",
+    userid:'',
     session_key: "",
-    baseUrl: "https://www.sulinghr.com",
-    wssUrl:  "ws://192.168.1.1011",
+    baseUrl: "http://192.168.1.101",
+    wssUrl:  "wss://192.168.1.101",
     visiable: null
   },
 })

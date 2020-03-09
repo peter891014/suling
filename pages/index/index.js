@@ -181,13 +181,14 @@ Page({
       key: 'third_Session',
       success: function (res2) {
         var token = res2.data.token
-        console.log("aaaopenid:" + res2.data.openid)
+        var openid = res2.data.openid
+        console.log("Openid:" + res2.data.openid)
         wx.request({
           url: baseUrl + '/upduser',
           header: { "token": token },
           method: "POST",
           data: {
-            openid: res2.data.openid,
+            openid: openid,
             nickName: userInfo.nickName,
             avatarUrl: userInfo.avatarUrl,
             gender: userInfo.gender,
@@ -199,10 +200,9 @@ Page({
             that.setData({
               aaa: app.globalData.visiable
             })
-            console.log("aaa1" + that.data.aaa)
             if (res3.data != "" && res3.data != null) {
               //SQL更新用户数据成功
-
+              app.globalData.userid=res3.data
             } else if (res3.data == "" || res3.data == null) {
               wx.navigateTo({
                 url: '../phonenumber/phonenumber',

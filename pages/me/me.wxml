@@ -1,53 +1,57 @@
 <!--pages/mine/mine.wxml-->
 <!--pages/mine/mine.wxml-->
 
-  <view class="login-info">
-    <view wx:if='{{false}}' class="nologin center">
-      <text class="loginbut">登录/注册</text>
-    </view>
-    <view wx:if='{{true}}' class="has-login">
-     <view style="width:100%;height:40rpx"></view>
-      <view class="resume-imageTitle">
-    <open-data type="userAvatarUrl"></open-data>
+<view class="login-info">
+  <view wx:if='{{false}}' class="nologin center">
+    <text class="loginbut">登录/注册</text>
   </view>
-  <view class="resume-nameTitle">
-    <open-data type="userNickName"></open-data>
-  </view>
+  <view wx:if='{{true}}' class="has-login">
+    <view style="width:100%;height:40rpx"></view>
+    <view class="resume-imageTitle">
+      <open-data type="userAvatarUrl"></open-data>
     </view>
-    </view>
-    <view class="head-int" bindtap="viewResume">
-         <view class="num">
-     <image class="numImage" src="../../common/style/icon/yijianfankui@2x.png"></image>
-    
-     <text class="deliver-text">我的面试</text>
+    <view class="resume-nameTitle">
+      <open-data type="userNickName"></open-data>
     </view>
   </view>
-  
-    <view class="me-int" bindtap="viewDeliver">
-    <view class="num">
-     <image class="numImage" src="../../common/style/icon/xinjianjianli@2x.png"></image>
-    
-      <text class="deliver-text">我的简历</text>
-      </view>
-    </view>
-    <view class="me-int" bindtap="viewInterview">
-      <view class="num">
-       <image class="numImage" src="../../common/style/icon/collection@2x.png"></image>
-     
-      <text class="deliver-text">收藏企业</text>
-       </view>
-       
-    </view>
+</view>
+<view class="head-int" bindtap="viewResume">
+  <view class="num">
+    <image class="numImage" src="../../common/style/icon/yijianfankui@2x.png"></image>
 
-       <view class="me-int" bindtap="integral">
-    <view class="num">
-     <image class="numImage" src="../../common/style/icon/xinjianjianli@2x.png"></image>
-    
-      <text class="deliver-text">我的积分</text>
-      </view>
-    </view>
+    <text class="deliver-text">我的面试</text>
+  </view>
+</view>
 
-    <!-- <view class="me-int">
+<view class="me-int" bindtap="viewDeliver">
+  <view class="num">
+    <image class="numImage" src="../../common/style/icon/xinjianjianli@2x.png"></image>
+
+    <text class="deliver-text">我的简历</text>
+  </view>
+</view>
+<view class="me-int" bindtap="viewInterview">
+  <view class="num">
+    <image class="numImage" src="../../common/style/icon/collection@2x.png"></image>
+
+    <text class="deliver-text">收藏企业</text>
+  </view>
+
+</view>
+<view class="me-int" bindtap="myInvitationCode">
+  <view class="num">
+    <image class="numImage" src="../../common/style/icon/xinjianjianli@2x.png"></image>
+    <text class="deliver-text">我的推广码</text>
+  </view>
+</view>
+<view class="me-int" bindtap="integral">
+  <view class="num">
+    <image class="numImage" src="../../common/style/icon/xinjianjianli@2x.png"></image>
+    <text class="deliver-text">我的积分</text>
+  </view>
+</view>
+ <canvas-share bindclose="close" userInfo="{{userInfo}}" resultImage="{{resultImage}}" visible="{{visible}}" />
+<!-- <view class="me-int">
     
       <view class="num">
       <button class="me-button" open-type='feedback' >
@@ -60,4 +64,3 @@
     
     </view>
   -->
-

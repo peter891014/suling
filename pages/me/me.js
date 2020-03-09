@@ -9,6 +9,10 @@ Page({
   data: {
     userid: "",
     openid: "",
+    visible: false,
+    userInfo:{},
+    resultImage:''
+    
   },
   /**
   * 查看面试管理
@@ -133,7 +137,28 @@ Page({
   onHide: function () {
 
   },
-
+  myInvitationCode:function(){
+    var that = this
+    wx.cloud.callFunction({
+      name: 'generateQR',
+      data: {
+        page: 'pages/index/index',
+        scene: app.globalData.userid,
+        width: 300
+      },
+      success(res) {
+        console.log(res)
+        that.setData({
+          resultImage: res.result,
+          userInfo: app.globalData.userInfo,
+          visible: true
+        })
+      }
+    })
+  },
+  close: function () {
+    this.setData({ visible: false })
+  },
   /**
    * 生命周期函数--监听页面卸载
    */

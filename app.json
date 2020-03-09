@@ -23,7 +23,8 @@
     "pages/search/newsdetail/newsdetail",
     "pages/integral/integral",
     "pages/details/details",
-    "pages/lists/lists"
+    "pages/lists/lists",
+    "pages/mycode/mycode"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-      "my-cpn": "../../../components/my-cpn/my-cpn"
+      "my-cpn": "../../../components/my-cpn/my-cpn",
+      "canvas-share": "../jrzp/share/share"
   }
 }

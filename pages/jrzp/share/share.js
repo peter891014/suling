@@ -113,8 +113,9 @@ Component({
       const { avatarUrl, nickName } = userInfo
       const avatarPromise = getImageInfo(avatarUrl)
       const resultImagePromise = getImageInfo(resultImage)
-      const backgroundPromise = getImageInfo('https://img.xiaomeipingou.com/_assets_home-share-bg.jpg')
-
+      const backgroundPromise = getImageInfo('http://m.qpic.cn/psc?/V13Cv6dH1DBP2N/svpzve4PvuTHjdyhgQ9zLky2Lt9wntxzCEhL0hYPVIcNioldoRFmH1Tt2.KRx8g9x7rZsVxze953XJFHOXDH4Q!!/b&bo=ZgF3AgAAAAADBzA!&rf=viewer_4')
+      //http://m.qpic.cn/psc?/V13Cv6dH1DBP2N/svpzve4PvuTHjdyhgQ9zLky2Lt9wntxzCEhL0hYPVIcNioldoRFmH1Tt2.KRx8g9x7rZsVxze953XJFHOXDH4Q!!/b&bo=ZgF3AgAAAAADBzA!&rf=viewer_4
+//https://img.xiaomeipingou.com/_assets_home-share-bg.jpg
       Promise.all([avatarPromise, resultImagePromise, backgroundPromise])
         .then(([avatar, rImage, background]) => {
           const ctx = wx.createCanvasContext('share', this)
@@ -136,7 +137,7 @@ Component({
           ctx.drawImage(
             avatar.path,
             canvasW / 2 - radius,
-            y - radius,
+            y+200 ,
             radius * 2,
             radius * 2,
           )
@@ -144,20 +145,20 @@ Component({
           // 绘制用户名
           ctx.setFontSize(60)
           ctx.setTextAlign('center')
-          ctx.setFillStyle('#ffffff')
+          ctx.setFillStyle('#0A0A0A')
           ctx.fillText(
             nickName,
             canvasW / 2,
-            y + rpx2px(150 * 2),
+            y + rpx2px(460 * 2),
           )
          
 
           ctx.drawImage(
             rImage.path,
-            canvasW / 2 - rpx2px(300),
-            y + rpx2px(900 * 2),
-            300,
-            300,
+            canvasW / 2 - rpx2px(400),
+            y + rpx2px(780 * 2),
+            400,
+            400,
           )
           
           ctx.stroke()
