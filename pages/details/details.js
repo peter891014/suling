@@ -13,11 +13,11 @@ Page({
     address: '',
     numa: '',
     num: 1,
-    totalNum: 0,
-    hasCarts: false,
-    curIndex: 0,
-    show: false,
-    scaleCart: false
+    indicatorDots: true, //是否显示面板指示点
+    autoplay: true, //是否自动切换
+    interval: 3000, //自动切换时间间隔,3s
+    duration: 1000, //  滑动动画时长1s
+    minusStatus: 'disabled',
   },
   onLoad: function (options) {
     var that = this;
@@ -50,11 +50,11 @@ Page({
         that.setData({
           userid: res.data.userid
         })
-    }
+      }
     })
     var id = that.data.id
     wx.request({
-      url: baseUrl +  '/center/getCommodityDetail?commodityId=' + id,//请求地址
+      url: baseUrl + '/center/getCommodityDetail?commodityId=' + id,//请求地址
       method: 'GET',
       success: function (res) {
         console.log(res.data)
@@ -67,23 +67,40 @@ Page({
       },
     })
   },
-  addCount() {
-    let num = this.data.num;
-    num++;
-    this.setData({
-      num: num
-    })
-  },
-  delate() {
-    let num = this.data.num;
+  bindMinus: function () {
+    var num = this.data.num;
+    // 如果大于1时，才可以减  
     if (num > 1) {
       num--;
-    } else {
-      num = 1;
     }
+    // 只有大于一件的时候，才能normal状态，否则disable状态  
+    var minusStatus = num <= 1 ? 'disabled' : 'normal';
+    // 将数值与状态写回  
+    this.setData({
+      num: num,
+      minusStatus: minusStatus
+    });
+  },
+  /* 点击加号 */
+  bindPlus: function () {
+    var num = this.data.num;
+    // 不作过多考虑自增1  
+    num++;
+    // 只有大于一件的时候，才能normal状态，否则disable状态  
+    var minusStatus = num < 1 ? 'disabled' : 'normal';
+    // 将数值与状态写回  
+    this.setData({
+      num: num,
+      minusStatus: minusStatus
+    });
+  },
+  /* 输入框事件 */
+  bindManual: function (e) {
+    var num = e.detail.value;
+    // 将数值与状态写回  
     this.setData({
       num: num
-    })
+    });
   },
 
   addToCart() {
@@ -170,26 +187,26 @@ Page({
   onConfirm: function () {
     var that = this;
     if (that.data.name && that.data.phone && that.data.address) {
-         wx.request({
-          url: baseUrl + "/center/getPresent",
-          method: 'POST',
-          data: {
-            userId: that.data.userid,
-            name: that.data.name,
-            address: that.data.address,
-            phone: that.data.phone,
-            num: that.data.num,
-            commodityId: that.data.id
-          },
-          success: function (res) {
-            console.log(res)
-            wx.showToast({
-              title: '兑换成功',
-              icon: 'success',
-              duration: 2000
-            })
-          }
-        })
+      wx.request({
+        url: baseUrl + "/center/getPresent",
+        method: 'POST',
+        data: {
+          userId: that.data.userid,
+          name: that.data.name,
+          address: that.data.address,
+          phone: that.data.phone,
+          num: that.data.num,
+          commodityId: that.data.id
+        },
+        success: function (res) {
+          console.log(res)
+          wx.showToast({
+            title: '兑换成功',
+            icon: 'success',
+            duration: 2000
+          })
+        }
+      })
     } else {
       wx.showModal({
         title: '提示',

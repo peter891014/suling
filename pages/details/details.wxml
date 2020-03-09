@@ -1,18 +1,43 @@
-<view class="main">
-    <view class="goods-box">
-        <image src="{{goods.url}}" class="goods-thumb"></image>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{goods.swiperUrls}}">
+    <swiper-item>
+        <image src="{{item}}" data-src="{{item}}" bindtap="previewImage" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="product-price">
+<view class="product-price-wrap">
+    <text class="product-price-new">{{goods.price}}积分</text>  
+        <text class="discount">剩余{{goods.stock}}件</text>
+</view>
+<view class="product-name-wrap">
+  <text>{{goods.title}}</text>
+</view></view>
 
-        <view class="goods-operation">
-            <text class="goods-operation-red" bindtap="delate">-</text>
-            <text class="goods-operation-num">数量  {{num}}</text>
-            <text class="goods-operation-add" bindtap="addCount">+</text>
+<view class="steppers">
+<view class="shu">
+  <text>数量</text>
+</view>
+<view class="stepper">  
+    <!-- 减号 -->  
+    <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+    <!-- 数值 -->  
+    <input type="number" bindchange="bindManual" value="{{num}}" />  
+    <!-- 加号 -->  
+    <text class="normal" bindtap="bindPlus">+</text>  
+</view>  
+</view>
+ <view class="xiang"><text>礼品详情</text></view>
+<view class="details"> 
+   <scroll-view scroll-y="true"> 
+       <block wx:for-items="{{goods.introduceUrls}}" wx:key="name">
+       <image class="image_detail" src="{{item}}" mode="widthFix"/> 
+    </block>  
+   </scroll-view> 
+ </view> 
+     <view class="goods-operation">
             <text class="goods-to-cart" bindtap="addToCart">兑换</text>
-        </view>
-        <image wx:if="{{show}}" src="/image/cart1.png" class="to-carts-icon"></image>
-        <view class="goods-stock">剩余{{goods.price}}件</view>
-        <view class="goods-title">{{goods.title}}</view>
-        <view class="goods-price">{{goods.price}}积分</view>
-    </view>
+     </view>
 <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
 
 <view class="modal-dialog" wx:if="{{showModal}}">
@@ -49,5 +74,4 @@
 
 </view>
 
-</view>
 </view>
