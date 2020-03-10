@@ -18,7 +18,7 @@ Page({
     visible2: true,
     aaa: false,
     //mayulong
-    goods: [],
+    goods: [],  
     city: "获取地址",
     county: "",
     street: "",
